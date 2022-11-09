@@ -1,18 +1,288 @@
-.header {
-background: black;
+body {
+font-family: 'Inter', sans-serif;
+font-size: 14px;
+line-height: 77.7%;
+font-weight: 400;
+color: #0c0909;
 }
-.container {
 
+.header {
+background: #0A0A0A;
+padding: 33px 0px 32px;
+color: #717171;
 }
+
+.container {
+max-width: 1230px;
+margin: 0 auto;
+padding: 0 15px;
+}
+
 .nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
 }
+
 .menu {
+display: flex;
+flex-grow: 1;
+flex-basis: 0;
 }
+
 .menu-item {
+font-size: 24px;
+line-height: 82%;
+transition: color 0.2s ease-in;
 }
-.logo {
+
+.menu-item:not(:last-child) {
+margin-right: 30px;
 }
+
+.menu-item:hover {
+color: #fff;
+}
+
 .logo-img {
+-webkit-transition: -webkit-transform .8s ease-in-out;
+transition: transform .8s ease-in-out;
 }
+
+.logo-img:hover {
+-webkit-transform: rotate(360deg);
+transform: rotate(360deg);
+}
+
 .phone {
+font-size: 24px;
+line-height: 82%;
+transition: color 0.2s ease-in;
+flex-grow: 1;
+flex-basis: 0;
+text-align: right;
+}
+
+.phone:hover {
+color: #fff;
+}
+
+
+.headline {
+padding: 71px 0 40px;
+background: #F5F5F7;
+text-align: center;
+}
+
+.title {
+text-transform: uppercase;
+font-weight: 700;
+font-size: 64px;
+line-height: 83%;
+color: #490E84;
+margin: 0 0 40px;
+}
+
+.headline__image {
+margin-bottom: 25px;
+}
+
+.button {
+display: inline-block;
+background: #490E84;
+border-radius: 30px;
+color: #FFFFFF;
+font-weight: 700;
+font-size: 24px;
+line-height: 82.7%;
+padding: 22px 117px;
+transition: background 0.2 ease-in, color 0.2 ease-in;
+}
+
+.button:hover {
+background: #0A0A0A;
+color: #490E84;
+}
+
+
+.news {
+padding: 90px 0 150px;
+}
+
+.news__title, .color__title {
+margin: 0 0 50px;
+text-transform: uppercase;
+text-align: center;
+font-size: 32px;
+line-height: 82%;
+color: #717171;
+}
+
+.news__info {
+display: flex;
+align-items: center;
+}
+
+.news__text p {
+max-width: 560px;
+margin: 0 0 30px;
+}
+
+.news__text b {
+display: block;
+max-width: 560px;
+font-size: 20px;
+line-height: 76.9%;
+}
+
+.news__img {
+margin-left: 190px;
+filter: blur(0);
+transition: 0.3s;
+}
+
+.news__img:hover {
+filter: blur(2px);
+}
+
+
+.color {
+padding: 0 0 150px;
+}
+
+.color__row {
+display: flex;
+justify-content: space-between;
+text-align: center;
+}
+
+.color__link:hover {
+border-radius: 5px 5px;
+box-shadow: 0 0 5px 2px #490E84;
+}
+
+.color__img{
+margin-bottom: 20px;
+}
+
+.color-title {
+font-weight: 700;
+font-size: 20px;
+line-height: 80%;
+margin: 0 0 10px;
+}
+
+.color__subtitle {
+margin: 0;
+}
+
+
+
+
+.contacts__inner {
+display: flex;
+background: #574B63;
+color: #FFF;
+}
+
+.contacts__form {
+width: 100%;
+padding: 140px 100px;
+text-align: center;
+}
+
+.contacts__title {
+font-weight: 700;
+font-size: 32px;
+line-height: 82%;
+text-transform: uppercase;
+text-align: left;
+margin: 0 0 60px;
+}
+
+.contacts__input {
+padding: 10px 0;
+border: none;
+border-bottom: 1px solid #fff;
+display: block;
+width: 100%;
+background: #574B63;
+margin-bottom: 20px;
+}
+
+.contacts__input::placeholder {
+font-family: 'Inter', sans-serif;
+font-size: 14px;
+line-height: 77.7%;
+font-weight: 400;
+color: #fff;
+opacity: 0.5;
+}
+
+.contacts__text {
+opacity: 0.5;
+text-align: center;
+margin: 30px 0;
+}
+
+.contacts__button {
+border: none;
+font-weight: 700;
+font-size: 14px;
+line-height: 80%;
+color: #490E84;
+background: #FFFFFF;
+border-radius: 30px;
+cursor: pointer;
+padding: 16px 81px;
+transition: color 0.2s ease-in, background 0.2s ease-in;
+}
+
+.contacts__button:hover {
+color: #fff;
+background: #490E84;
+}
+
+
+
+.footer {
+background: #0A0A0A;
+color: #717171;
+}
+
+.footer-inner {
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 50px 0;
+}
+
+
+.footer__link {
+transition: color 0.2s ease-in;
+}
+
+.footer__link:hover {
+color: #fff;
+}
+
+.footer__logo-img {
+-webkit-transition: -webkit-transform .8s ease-in-out;
+transition: transform .8s ease-in-out;
+}
+
+.footer__logo-img:hover {
+-webkit-transform: rotate(360deg);
+transform: rotate(360deg);
+}
+
+.footer__phone {
+font-size: 24px;
+line-height: 82%;
+text-align: right;
+transition: color 0.2s ease-in;
+}
+
+.footer__phone:hover {
+color: #fff;
 }
